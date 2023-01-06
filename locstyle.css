@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Big+Shoulders+Display:wght@800;900&family=Kumbh+Sans:wght@400;700&family=Merriweather:ital@0;1&family=Outfit:wght@400;700&family=Plus+Jakarta+Sans:wght@500;700;800&family=Red+Hat+Display:wght@500;700;900&family=Space+Mono&family=Work+Sans:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Big+Shoulders+Display:wght@800;900&family=Kumbh+Sans:wght@400;700&family=Merriweather:ital@0;1&family=Outfit:wght@300;400;700&family=Plus+Jakarta+Sans:wght@500;700;800&family=Red+Hat+Display:wght@500;700;900&family=Space+Mono&family=Work+Sans:wght@400;800&display=swap');
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+    main {
+    width: 100vw;
+    height: 100vh;  
+}
+
+/*mobile*/
+
+.container {
+    width: 375px;
+    height: 1379px;
+    margin: auto;
+}
+
+.uppercont {
+    background: url(assets/mobile/image-map.png);
+    width: 375px;
+    height: 574px;    
+}
+
+    .backtohomeButton {
+        display: flex;
+        flex-direction: row;
+    }
+
+        .backtohome {
+            width: 204px;
+            height: 72px;
+            font-family: Big Shoulders Display;
+            font-weight: 800;
+            font-size: 20px;
+            color: white;
+            background-color: black;
+            
+        }
+
+        .leftarrow {  
+            width: 56px;
+            height: 72px;
+            background: url(icon-arrow-left.svg) #D5966C no-repeat center;      
+            order: -1;      
+        }
+
+    .ourlocation {        
+        height: 389px;
+        background-color: black;
+        padding: 48px 16px 56px 16px;
+        width: 343px;
+    }
+
+        h1 {
+            font-family: Big Shoulders Display;
+            font-size: 45px;
+            text-transform: capitalize;
+            color: white;           
+        }
+
+        h2 {
+            font-family: Big Shoulders Display;
+            font-size: 32px;
+            color: #D5966C;           
+        }
+
+        p {
+            color: white;
+            font-family: Outfit;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 28px;            
+        }
+
+    .footer {
+            background-image: url(logo-dark.svg);
+            background-color: #D5966C;
+            background-position: 32px 48px;
+            background-repeat: no-repeat;
+            height: 336px;    
+            width: 100%;
+            color: black;
+            
+        }
+
+            .footer p {
+                color: black;
+                font-family: Outfit;
+                font-size: 16px;  
+                margin: auto;  
+                padding-left: 32px;  
+                padding-right: 32px;  
+                padding-top: 126px;               
+            }
+
+            .logos {
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                padding-left: 32px;
+            }
+
+                .facebook,
+                .instagram,
+                .twitter {
+                    size: 20px;
+                    margin-top: 38px;
+                    margin-right: 20px;
+                    filter: brightness(0.1);
+                }
+
+/*tablet*/
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+        height: 1252px;
+        margin: auto;
+    }
+    
+    .uppercont {
+        background: url(assets/tablet/image-map.png);
+        width: 768px;
+        height: 685px;    
+    }
+
+    .backtohomeButton {
+        margin-left: 39px;
+    }
+
+    .ourlocation {
+        display: flex;
+        flex-direction: row;
+        width: 736px;
+        height: 436px;
+    }
+
+    h1 {
+        width: 223px;
+        height: 100px;
+        margin-left: 23px;
+    }
+
+    .nexttoheader {
+        width: 398px;
+        font-family: Outfit;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 300;
+        margin-left: 68px;
+        margin-top: 10px;
+    }
+
+    .footer {
+        background-image: url(logo-dark.svg) 159.57px 58px;
+        background-position: 32px 68px;
+    }
+
+    .footerdiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .footerdiv p {
+        width: 281px;
+        height: 104px;
+        margin-left: 214px;
+        margin-top: 56px;
+        padding-top: 0;
+        font-family: Outfit;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .logos {
+        margin-top: 26px;
+        padding: 0;
+        margin-right: 30px;
+    }
+}   
+    
+
+/*desktop*/
+
+@media screen and (min-width: 1440px) {
+
+    .container {
+        width: 1440px;
+        height: 1392px;
+        margin: auto;
+    }
+    
+    .uppercont {
+        background: url(assets/desktop/image-map.png);
+        width: 1440px;
+        height: 685px;    
+    }
+
+    .backtohomeButton {
+        margin-left: 156px;
+    }
+
+    .ourlocation {
+        width: 1440px;
+        height: 548px;
+        padding: 0;
+        padding-top: 57px;
+    }
+
+    h1 {
+        width: 350px;
+        height: 140px;
+        margin-left: 165px;
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    .nexttoheader {
+        width: 540px;
+        height: 128px;
+        margin-left: 220px;
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .ptext {
+        padding-right: 100px;
+    }
+
+    .footer {
+        background-image: url(logo-dark.svg);
+        background-position: 165px 80px;
+        height: 244px
+    }
+
+    .footerdiv {
+        margin-left: 140px;
+    }
+
+    .logos {
+        margin-right: 115px;
+    }
+
+    .footerdiv p {
+        font-size: 18px;
+        line-height: 28px;
+        margin-left: 400px;
+        width: 430px;
+}
+
+}   
+
+        
+

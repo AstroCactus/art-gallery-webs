@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Big+Shoulders+Display:wght@800;900&family=Kumbh+Sans:wght@400;700&family=Merriweather:ital@0;1&family=Outfit:wght@400;700&family=Plus+Jakarta+Sans:wght@500;700;800&family=Red+Hat+Display:wght@500;700;900&family=Space+Mono&family=Work+Sans:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Big+Shoulders+Display:wght@800;900&family=Kumbh+Sans:wght@400;700&family=Merriweather:ital@0;1&family=Outfit:wght@300;400;700&family=Plus+Jakarta+Sans:wght@500;700;800&family=Red+Hat+Display:wght@500;700;900&family=Space+Mono&family=Work+Sans:wght@400;800&display=swap');
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+    main {
+    width: 100vw;
+    height: 100vh;  
+}
+
+/*mobile*/
+
+    .container {
+        width: 375px;
+        height: 2811px;
+        margin: auto;
+        background-color: white;
+    }
+        .mainContainer {
+            display: flex;
+            flex-direction: column;
+            width: 343px;           
+            margin: auto;
+            margin-bottom: 120px;
+            background-color: white;
+            margin-top: -25px;
+        }
+
+        .herotablet,
+        .gridonetablet,
+        .gridtwotablet,
+        .gridthreetablet,
+        .herodesktop,
+        .gridonedesktop,
+        .gridtwodesktop,
+        .gridthreedesktop {
+            display: none;
+        }
+
+       .heromobile {
+            width: 375px;
+            margin-left: -16px;
+       }
+        
+        .firstsmallcont {
+            margin-bottom: 120px;
+        }
+            h1 {
+                color: #151515;
+                font-family: Big Shoulders Display;
+                font-weight: 900;
+                font-size: 60px;
+            }
+
+            .desktopdivblack {
+                display: none;
+            }
+
+                .ourlocButton {
+                    display: flex;
+                    flex-direction: row;
+                }
+                
+                .ourloc {
+                        width: 204px;
+                        height: 72px;
+                        font-family: Big Shoulders Display;
+                        font-weight: 800;
+                        font-size: 20px;
+                        color: white;
+                        background-color: black;
+                    }
+
+                .rightarrow {  
+                        width: 56px;
+                        height: 72px;
+                        background: url(icon-arrow-right.svg) #D5966C no-repeat center;            
+                    }
+
+            p {
+                font-family: Outfit;
+                font-size: 18px;
+                font-weight: 300px;
+                height: 112px;
+                color: #444444;
+            }
+
+            h2 {
+                color: #151515;
+                font-family: Big Shoulders Display;
+                font-weight: 900;
+                font-size: 50px;
+            }
+
+            .yourday {
+                margin-top: -20px;
+            }
+
+            .gridthreemobile {
+                margin-top: 16px;
+                margin-bottom: 16px;
+                height: 200px;
+            }
+
+            .lastcont {
+                height: 293px;
+                color: white;
+                background-color: black;
+                padding: 48px 24px;
+            }
+
+                .lastcont h2,
+                .lastcont p 
+                 {
+                    color: white;
+                    background-color: black;
+                }
+            
+            .footer {
+                color: white;
+                background-image: url(logo-light.svg), url(icon-facebook.svg), url(icon-instagram.svg), url(icon-twitter.svg);
+                background-color: black;
+                background-position: 32px 48px, 32px 268px, 72px 268px, 112px 268px;
+                background-repeat: no-repeat;
+                height: 336px;    
+                width: 100%;
+            }
+
+                .footer p {
+                    color: white;
+                    font-family: Outfit;
+                    font-size: 16px;  
+                    margin: auto;  
+                    padding-left: 32px;  
+                    padding-right: 32px;  
+                    padding-top: 126px;               
+                }
+
+                .ourlocButton:hover .ourloc {
+                    background-color: #D5966C;
+                }
+
+                .ourlocButton:hover .rightarrow {
+                    background-color: black;
+                }
+
+/*tablet*/
+
+@media screen and (min-width: 768px) {
+    .center {
+        display: inline-block;      
+    } 
+
+    .mainContainer {
+        width: 768px; 
+        height: 2287px;  
+        margin-top: 0;
+        margin-bottom: 0;      
+    }
+
+    .container {
+        width: 768px;
+    }
+
+    .uppercont {     
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 120px;
+        margin-left: auto;
+        margin-right: auto;       
+    }
+    
+        .herotablet {
+            display: inline-block; 
+            width: 437px;
+            height: 700px;
+            margin-left: 0;
+        }
+
+        .herotablet,
+        .gridonetablet,
+        .gridtwotablet,
+        .gridthreetablet {
+            display: flex;
+        }
+
+        .heromobile,
+        .gridonemobile,
+        .gridtwomobile,
+        .gridthreemobile,
+        .herodesktop,
+        .gridonedesktop,
+        .gridtwodesktop,
+        .gridthreedesktop {
+            display: none;
+        }
+
+        .firstsmallcont {
+            align-self: right;
+            padding-top: 50px;
+            margin-left: -50px;
+            margin-right: 40px;
+            width: 339px;
+            padding-bottom: 145px;
+        }
+        .firstsmallcont p {
+            margin-top: 50px;
+            margin-bottom: 60px;
+            
+        }
+
+        .middlecont {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            row-gap: 11px;
+            
+        }
+    
+        .yourdayone {
+            display: flex;
+            flex-direction: row;
+            width: full-width;
+            margin: auto;
+        }
+
+            .yourdaytext {
+                order: -1;
+                width: 223px;
+                padding-right: 68px;
+            }
+
+            .gridonetablet {
+                width: 398px;           
+            }
+
+        .yourdaytwo {
+            display: flex;
+            flex-direction: row;           
+            margin: auto;
+        }
+                .gridtwotablet {
+                    width: 398px;
+                    height: 720px;
+                    margin-right: 11px;
+                }
+            .yourdaytwosecond {
+                display: flex;
+                flex-direction: column;    
+                height: 720px;            
+            }
+
+                .gridthreetablet {
+                    width: 280px;
+                    height: 313px;
+                    margin-top: 0;
+                    margin-bottom: 11px;
+                }
+
+        .lastcont {
+            width: 223px;
+            height: 396px;
+            padding: 0 28px 0 29px;
+        }
+
+        .footer {
+            height: 216px;
+            width: 100%;
+            background-image: url(logo-light.svg), url(icon-facebook.svg), url(icon-instagram.svg), url(icon-twitter.svg);
+            background-position: 39px 56px, 628px 56px, 668px 56px, 708px 56px;
+            background-repeat: no-repeat;
+        }
+            .footer p {
+                width: 281px;
+                height: 104px;               
+                margin-left: 214px;
+                margin-right: 273px;
+                padding-top: 56px;
+            }
+}
+
+
+/*desktop*/
+@media screen and (min-width: 1439px) {
+
+    .container {
+        width: 1440px;
+        height: 2554px;
+}
+
+        .mainContainer {
+            width: 1440px;
+        }
+            .uppercont {     
+                display: flex;
+                flex-direction: row;
+                margin: auto; 
+                height: 800px;
+                margin-bottom: 180px;
+            }
+
+                .firstsmallcont {
+                    margin-top: 190px;
+                }
+
+                    .firstsmallcont p {
+                        width: 350px;
+                        height: 160px;
+                        margin-top: 0;
+                        align-self: right;
+                        line-height: 32px;
+                        font-weight: 300;
+                        font-size: 22px;
+                        margin-left: 270px;
+                    }
+                
+                .desktopheader {        
+                    display: flex;
+                    flex-direction: row;                        
+                    margin-left: -780px;
+                    height: 160px;
+                }
+
+                .desktopheadertext {
+                    width: 514px;
+                    height: 176px;
+                    line-height: 88px;
+                }
+
+                .desktopdivblack {
+                    display: flex;
+                    background-color: black;
+                    width: 450px;       
+                }
+
+                .herodesktop {
+                    width: 540px;
+                    height: 100%;       
+                }
+
+                h1 {
+                    margin: 0;
+                    color: white;
+                    font-size: 96px;
+                    font-weight: 900;
+                    font-family: Big Shoulders Display;
+                    line-height: 88px;
+                    letter-spacing: 0.5px;
+                }
+        
+                .half-color {
+                    background: linear-gradient(to right, white 70%, black 30%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                .lery {
+                    color: black;
+                }
+                            
+                .ourlocButton {
+                    margin-top: 54px;
+                }
+
+        .yourdayone {
+            margin-left: 165px;
+            margin-bottom: 30px;
+        }
+
+        .yourdaytext {
+            width: 350px;
+        }
+
+        .yourdaytwo {
+            width: 1110px;
+            height: 1150px;
+            top: 980px;
+            left: 165px;
+        }
+            .gridonedesktop {
+                width: 635px;
+                height: 400px;
+                margin-left: 55px;
+            }
+
+            .lastcont {
+                width: 390px;
+                height: 377px;
+                }
+
+            .gridtwodesktop {
+                    width: 635px;
+                    margin-right: 30px;
+                }
+            .yourdaytwosecond {
+                display: flex;
+                flex-direction: column;    
+                height: 720px;      
+                width: 445px;   
+                
+            }
+
+            .yourdaytwosecond h2 {
+                font-size: 60px;
+                line-height: 60px;
+                font-weight: 900;
+                width: 350px;
+                margin-right: 20px;
+            }
+
+            .yourdaytwosecond p {
+                font-size: 22px;
+                line-height: 32px;
+                font-weight: 300;
+                font-family: Outfit;
+                width: 350px;
+                margin-right: 20px;
+            }
+
+            .gridthreedesktop {
+                    width: 445px;
+                    margin-top: 0;
+                    margin-bottom: 30px;
+                }    
+                
+        .middlecont {
+            row-gap: 0;
+        }
+
+        .footer {
+            height: 244px;
+            width: 100%;
+            background-image: url(logo-light.svg), url(icon-facebook.svg), url(icon-instagram.svg), url(icon-twitter.svg);
+            background-position: 165px 80px, 1175px 80px, 1215px 80px, 1255px 80px;
+            background-repeat: no-repeat;
+        }
+
+        .footer p {
+            width: 430px;
+            height: 84px;               
+            margin-left: 465px;
+            margin-right: 565px;
+            padding-top: 80px;
+        }
+
+        .herotablet,
+        .gridonetablet,
+        .gridtwotablet,
+        .gridthreetablet {
+            display: none;
+            }
+
+        .herodesktop,
+        .gridonedesktop,
+        .gridtwodesktop,
+        .gridthreedesktop {
+            display: flex;
+            }
+}
+
+
+
