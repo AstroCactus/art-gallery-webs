@@ -1,6 +1,6 @@
 Challenges in this project and the ways to resolve them:
 
-1. Used several background images and define their locations using background-position property:
+1. Used several background images and defined their locations using background-position property:
 
    background-image: url(logo-light.svg), url(icon-facebook.svg), url(icon-instagram.svg), url(icon-twitter.svg);
                 background-color: black;
